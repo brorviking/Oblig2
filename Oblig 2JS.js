@@ -21,7 +21,6 @@ function deleteBar() {
             numbers.splice(barPosition, 1)
     console.log(chosenBar)
     chosenBar = ""
-    disButton = "disabled";
     updateView();
 }
 
