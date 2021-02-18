@@ -21,11 +21,15 @@
 
 
     // view
-    let disButton = "disabled"; // Om butten er disabled eller ikke.
+    
 
     updateView();
     function updateView() {
         let svgInnerHtml = '';
+        let disButton = "disabled"; // Om butten er disabled eller ikke.
+        if(chosenBar != "") {
+            disButton = "";
+        }
         //hint hint variabel for om knappen skal være disabled eller  ""   - fix med variabel+if
         for (let i = 0; i < numbers.length; i++) {
             svgInnerHtml += createBar(numbers[i], i + 1);
